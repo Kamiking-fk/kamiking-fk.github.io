@@ -1,0 +1,494 @@
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin:0;
+  padding:0;
+  border:0;
+  outline:0;
+  font-size:100%;
+  vertical-align:baseline;
+  background:transparent;
+}
+
+body {
+  line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+  display:block;
+}
+
+nav ul {
+  list-style:none;
+}
+
+blockquote, q {
+  quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content:'';
+  content:none;
+}
+
+a {
+  margin:0;
+  padding:0;
+  font-size:100%;
+  vertical-align:baseline;
+  background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color:#ff9;
+  color:#000;
+  text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color:#ff9;
+  color:#000; 
+  font-style:italic;
+   font-weight:bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom:1px dotted;
+  cursor:help;
+}
+
+table {
+  border-collapse:collapse;
+  border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display:block;
+  height:1px;
+  border:0;   
+  border-top:1px solid #cccccc;
+  margin:1em 0;
+  padding:0;
+}
+
+input, select {
+  vertical-align:middle;
+}
+
+
+
+/*　////// ここからがCSS //////　*/
+
+
+body {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.container {
+  height: 1200px;
+}
+
+.hero-img {
+  background-image: url(google_office.png);
+  background-size: cover;
+  height: 670px;
+  position: relative;
+}
+
+.hero-img::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 1200px;
+  height: 670px;
+  background: rgba(0,0,0, 0.8);
+}
+
+.header-bar {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  position: fixed;
+}
+
+.header-bar::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 10.5%;
+  display: block;
+  width: 1200px;
+  height: 80px;
+  background: rgba(0,0,0, 0.1);
+}
+
+.header-logo {
+  position: absolute;
+  top: 15%;
+  left: 10%;
+}
+
+.header-logo h1 {
+  color:#fff;
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+}
+
+.header-menu ul {
+  display: flex;
+  padding-left: 500px;
+}
+
+.header-menu  ul li {
+  list-style: none;
+  padding-right: 20px;
+}
+
+.header-menu li a {
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  padding-top: 10px;
+}
+
+.bottun1 {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: orangered;
+}
+
+.bottun2 {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: orangered;
+}
+
+.main-message h2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+  font-size: 5rem;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  line-height: 1.2;
+  color:#fff;
+}
+
+.main-message p {
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+  color:#fff;
+  font-size: 1.1rem;
+  opacity: 0.7;
+}
+
+.intro {
+  height: 530px;
+  width: 100%;
+  padding-top: 100px;
+  background-color: orangered;
+  display: flex;
+}
+
+.intro-text {
+  width: 385px;
+  padding-left: 150px;
+}
+
+.intro-img {
+  width: 420px;
+  height: 280px;
+  padding-left: 60px;
+}
+
+.text1  {
+  font-size: 2.8rem;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  line-height: 1.2;
+}
+
+.text2 {
+  width: 350px;
+  height: 200px;
+  padding-left: 60px;
+  padding-top: 25px;
+  font-size: 0.85rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  line-height: 1.8;
+  position: relative;
+}
+
+.text2 :first-of-type {
+  content: '';
+  position: absolute;
+  top: 12%;
+  bottom: 82%;
+  right: 90%;
+  left: 0;
+  transform: skew(45deg);
+  border-bottom: 2px solid black;
+  border-left: 2px solid black;
+}
+
+
+.about-wrapper {
+  height: 1180px;
+  width: 100%;
+  padding-top: 100px;
+}
+
+.about-title {
+  padding: 90px 0 60px 0;
+  line-height: 1.2;
+}
+
+.about-title h3 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  letter-spacing: 3px;
+  text-align: center;
+}
+
+.about-title p {
+  text-align: center;
+}
+
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  margin: 5px;
+  height: 400px;
+  width: 300px;
+  line-height: 1.5;
+}
+
+.about-img {
+  width: 278px;
+  height: 180px;
+}
+
+.contact-wrapper {
+  height: 370px;
+  background-image: url(freeaddress_01.jpg);
+  background-size: cover;
+  position: relative;
+}
+
+.contact-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0, 0.8);
+}
+
+.contact-text {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color:  #fff;
+  font-size: 1.2rem;
+  width: 100%;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.btn-wrapper {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.fas {
+  font-size: 1.5rem;
+  margin-right: 8px;
+}
+
+.btn-wrapper a {
+  text-decoration: none;
+  color: #fff
+}
+
+.signup {
+  color: #fff;
+  background-color: orangered;
+  display: inline-block;
+  padding: 40px 75px;
+}
+
+.news-wrapper {
+  height: 690px;
+  width: 1200px;
+  background-color: orangered;
+}
+
+.news-wrapper h3 {
+  font-size: 2.5rem;
+  letter-spacing: 3px;
+  padding: 80px 0 60px 155px;
+}
+
+.news-content-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.news {
+  width: 400px;
+  padding: 0 0 50px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+
+.line {
+  width: 0;
+  height: 20px;
+  position: relative;
+}
+
+.line::before {
+  content: '';
+  position: absolute;
+  top: 20%;
+  bottom: 0;
+  right: 20%;
+  left: 20%;
+  transform: skew(-45deg);
+  border-top: 2px solid black;
+  border-left: 2px solid black;
+}
+
+.news-content p {
+  font-size: 0.85rem;
+  font-weight: bold;
+  margin-bottom: 12px;
+  padding-left: 70px;
+}
+
+.news-text {
+  padding-top: 15px;
+  padding-left: 15px;
+}
+
+.news-text p {
+  font-size: 0.85rem;
+  font-weight: bold;
+  letter-spacing: 3px;
+  line-height: 1.8;
+}
+
+.news-wrapper img {
+  width: 125px;
+  height: 125px;
+}
+
+.footer {
+  position: relative;
+}
+
+.footer-wrapper {
+  height: 395px;
+  width: 1200px;
+  background-image: url(executive_zoom.jpg);
+  background-size: contain;
+}
+
+.footer-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0, 0.8);
+}
+
+.footer-logo {
+  color: #fff;
+  font-size: 1.2rem;
+  letter-spacing: 1.5px;
+  position: absolute;
+  top: 25%;
+  left: 15%;
+  transform: translate(-50%, -50%);
+}
+
+.footer-bar {
+  display: flex;
+  align-items: center;
+}
+
+.nav-menu {
+  list-style: none;
+  height: 80px;
+  width: 700px;
+  display: flex;
+  position: absolute;
+  top: 30%;
+  left: 65%;
+  transform: translate(-50%, -50%);
+}
+
+.nav-menu li a {
+  color: #fff;
+  text-decoration: none;
+  padding-right: 20px;
+}
+
+@media(max-width: 640px ) {
+  .intro {
+    display: flex;
+    flex-direction: column;
+  }
+}
